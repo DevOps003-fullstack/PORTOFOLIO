@@ -390,6 +390,10 @@ span{
     justify-content: left;
     align-items: baseline;
     padding: 5rem 5rem;
+    overflow: auto; /* Allow scrolling if content overflows */
+    min-height: 100px; /* Adjust the minimum height as needed */
+    padding: 16px; /* Adjust padding as needed */
+    box-sizing: border-box;
   }
   
   .service-info h4 {

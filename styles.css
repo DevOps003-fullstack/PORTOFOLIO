@@ -393,17 +393,27 @@ span{
     min-height: 100px; /* Adjust the minimum height as needed */
     padding: 16px; /* Adjust padding as needed */
     box-sizing: border-box;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #888 #f1f1f1;
   }
+.service-box .service-info::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    display: none; /* Hide scrollbar by default */
+}
+
+.service-box .service-info:hover::-webkit-scrollbar {
+    display: block; /* Show scrollbar on hover */
+}
+
+.service-box .service-info::-webkit-scrollbar-track {
+    background: black; /* Background of the scrollbar track */
+}
 .service-box .service-info::-webkit-scrollbar {
     width: 8px; /* Width of the scrollbar */
 }
 
-.service-box .service-info::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Background of the scrollbar track */
-}
-
 .service-box .service-info::-webkit-scrollbar-thumb {
-    background: #888; /* Color of the scrollbar thumb */
+    background: #00ffee; /* Color of the scrollbar thumb */
     border-radius: 4px; /* Rounded corners for the scrollbar thumb */
 }
 
